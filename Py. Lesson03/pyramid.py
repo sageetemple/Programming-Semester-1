@@ -1,0 +1,5 @@
+print("To calculate the volume of your pyramid:")
+l= int(input("Enter your base length:"))
+w= int(input("Enter your base width:"))
+h= int(input("Enter your slant height:"))
+print("The volume of your pyramid is", (l*w*h)/3)
