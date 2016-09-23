@@ -1,3 +1,5 @@
+
+
 item1=input("Enter item one: ")
 price1= float(input("Enter item one's price: "))
 item2= input("Enter item two: ")
