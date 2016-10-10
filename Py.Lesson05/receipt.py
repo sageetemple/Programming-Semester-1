@@ -8,35 +8,27 @@ item4=input("What is your fourth item:")
 price4=float(input("What is your fourth price:"))
 subtotal = price1+price2+price3+price4
 taxmoney= subtotal*.075
+discount=0
 def discount():
-    (subtotal+tax)*.15
-save=(subtotal+tax)>=2000
-    
+    global discount
+    if (subtotal+taxmoney)>=2000:
+        discount=(subtotal+taxmoney)*.15
+    if (subtotal+taxmoney)<=2000:
+        discount=(subtotal+taxmoney)*0
+print("\n")    
 print("{:<>24}".format(" Receipt"),"{:><20}".format(""))
 def displayreceipt(item,price):
-    print("{:<10}".format(item),"{:.>30}".format(price))
-item=item1
-price=price1
-displayreceipt(item,price)
-item=item2
-price=price2
-displayreceipt(item,price)
-item=item3
-price=price3
-displayreceipt(item,price)
-item=item4
-price=price4
-displayreceipt(item,price)
+    print("{:<10}".format(item),"{:.>30.2f}".format(price))
+displayreceipt(item1,price1)
+displayreceipt(item2,price2)
+displayreceipt(item3,price3)
+displayreceipt(item4,price4)
 print("\n")
-item="Subtotal"
-price=subtotal
-displayreceipt(item,price)
-item="Tax"
-price=taxmoney
-displayreceipt(item,price)
-if save:
-    print("{:<10}".format("Discount"),"{:.>30}".format(discount()))
-if not save:
-    print("{:*^40}".format("No discount today :("))
-
+displayreceipt("Subtotal",subtotal)
+displayreceipt("Tax",taxmoney)
+discount()
+displayreceipt("Discount",discount)
+total = subtotal-discount+taxmoney
+displayreceipt("Total",total)
+print("{:_^45}".format("_"),"\n {:*^40}".format("Thank you please come again!!"))
 
