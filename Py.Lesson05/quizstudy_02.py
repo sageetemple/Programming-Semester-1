@@ -1,17 +1,26 @@
-num1=67
-num2=89
+
+
+
+num1=7
+num2=5
 def calcSum(one,two):
     return one+two
 def sumPrint(one,two):
-    print("The sum of", one,"and",two,"is",calcSum(one,t
-item="Burger"
-price=5.67
-def formatreceipt(one,two):
-    print("{:<10}".format(one),"{:.>10.2f}".format(two))
-formatreceipt(item,price)
+    print("The sum of",one," and",two," is", calcSum(one,two))
+sumPrint(num1,num2)    
 
-item1=45.6
-item2=45.2
-def formatinput(one,two):
-    print("The total cost of you order is {:5.2f}".format(one+two))
-formatinput(item1,item2)
+def calcSurf(side):
+    return 6*(side**2)
+
+item="Cheeseburger"
+price=7.896
+def formatR(one,two):
+    print("{:<15}......${:0.2f}".format(one,two))
+formatR(item,price)
+
+item1=5.675
+item2=7.897
+def formatr(one,two):
+    print("The total cost of your order is ${:5.2f}".format(one+two))
+formatr(item1,item2)
+
