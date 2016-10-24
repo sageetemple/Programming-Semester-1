@@ -10,3 +10,4 @@ t=float(input("Life of loan: "))
 print("Your payment is $","{:5.2f}".format(loan(r, p, n, t)))
 
 
+
