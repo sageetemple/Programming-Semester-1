@@ -7,8 +7,9 @@ def avDigits():
     global digits, average
     while num > 0:
         digits +=1
-        average +=
+        average +=digits
         num = int(num/10)
+    average= average
     print("The average of the digits in ", number," is ", average)
 
 avDigits()
