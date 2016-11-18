@@ -4,7 +4,9 @@ for i in words:
     print(i)
 print("\n\nReversed...")
 def reverse():
-    for i in range(:
-        
+    output=" "
+    for i in words:
+        output += i + " "
+    print(output)
 reverse()
     
