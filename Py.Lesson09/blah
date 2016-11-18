@@ -1,0 +1,3 @@
+words=["hello","okay","cool","yeah","lol"]
+for i in range(0,len(some),-1):
+      
