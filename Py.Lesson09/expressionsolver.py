@@ -1,5 +1,6 @@
 express=input("Please enter a mathematical expression: ")
 equation=express.split()
+print(equation[0])
 i=0
 while i < len(equation):
       if i<len(equation) and (equation[i]=="*" or equation[i]=="/"):
@@ -9,7 +10,7 @@ while i < len(equation):
                   equation[i]=(equation[i-1] /(i+1))
             equation.remove(equation[i-1])
             equation.remove(equation[i])
-      i +=1
+      i =i+1
 while i < len(equation):
       if i < len(equation) and (equation[i]=="+" or equation[i]=="-"):
             if equation[i]=="+":
@@ -18,7 +19,7 @@ while i < len(equation):
                   equation[i]=(equation[i-1]-(i+1))
             equation.remove(equation[i-1])
             equation.remove(equation[i])
-      i +=1
+      i =i+1
 print(equation)
 
 

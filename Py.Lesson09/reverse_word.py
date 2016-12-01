@@ -1,4 +1,3 @@
-
 words=["hello","okay","cool","yeah","lol"]
 print("In order...")
 for i in words:
@@ -6,9 +5,9 @@ for i in words:
 print("\n\nReversed...")
 z=0
 def reverse(some):
-    for i in range(0,(len(some)-1),-1):
+    for i in range((len(some)-1),-1,-1):
         global z
         z=some[i]
-    print(z)
+        print(z)
 reverse(words)
     
