@@ -8,5 +8,7 @@ for i in range(0,4):
     for j in range(0,4):
         wordsList[i].append(spList[spot])
         output += wordsList[i][j] + "\t"
-        spot +=1
+        if spot<=16:
+            spot +=1
     print(output)
+    
