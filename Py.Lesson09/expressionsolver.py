@@ -1,4 +1,4 @@
-express=input("Please enter a mathematical expression: ")
+express=input("Please enter a mathematical expression with spaces in between your characters: ")
 equation=express.split()
 
 i=0
@@ -22,6 +22,8 @@ while i < len(equation):
             equation.remove(equation[i])
       i =i+1
 print(equation)
+
+
 
 
 
