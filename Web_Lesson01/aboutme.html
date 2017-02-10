@@ -1,5 +1,25 @@
 <!doctype html>
 <html>
+<head> <!--the title of my site-->
+	<style type = "text/css">
+		h3 {font-family:helvetica;
+			color:#BA55D3;
+			font-weight:bold;
+			}
+		body {background-image:url(Tulips.jpg);
+			background-repeat:no-repeat;
+			background-position:75% 0px;
+			font-weight:bold;
+			line-height:200%;
+			background-color:#E6E6FA;
+			font-family:arial;
+			}
+		h2 {font-style:italic;
+			color:#DDA0DD;
+			}
+	</style>
+	<title> Notes On Web Development</title>
+</head>
 <img src = "Koala.jpg"height="400"></img><br/>
 <h2><a href = "#tags">Notes On Tags</a></h2>
 <h2><a href = "#text">Notes On Changing Text</a></h2>
@@ -7,11 +27,8 @@
 <h2><a href = "#header">Notes On Headers</a></h2>
 <h2><a href = "#tooltips">Notes On Tool Tips</a></h2>
 <h2><a href = "#images">Notes On Adding Images</a></h2>
-
-<head> <!--the title of my site-->
-	<title> Notes On Web Development</title>
-</head>
 <body>
+<hr/>
 <h3><a name = "tags"></a>Tags</h3>
 	<p>
 	When beginning a website, you need to declare your document type such as the tag with the < symbol followed by an exclamation point and then "doctype html" and ending with a > when coding in HTML. <br/><br/>
@@ -33,7 +50,8 @@
 <h3><a name = "links"></a>Adding Links</h3>
 	<p>
 	In order to add links, the anchor tag is used. The anchor tag is "a" within the <>. In order to link to another site, follow the "a" of the opening tag with "href =" and then the link to the site before closing the tag with a >. <br/><br/>
-	However, the website user will not be able to see anything within the anchor tag. Therefore, it is useful to follow the opening tag with some text so that the user can click on that text within the website to take them to your link. Follow your text with the closing anchor tag. <br/><br/><br/>
+	However, the website user will not be able to see anything within the anchor tag. Therefore, it is useful to follow the opening tag with some text so that the user can click on that text within the website to take them to your link.<br/><br/>
+	Follow your text with the closing anchor tag.<br/><br/>
 	In order to link to different places within your website, you need to anchor a name to the <a href "#header">header</a> of the section you want to link to.<br/><br/>
 	Within the opening anchor tag in your header, follow the "a" with "name = " and then a simple, unique name for the section enclosed within quotation marks.<br/><br/>
 	You can now go to the top of your page and link to separate sections with a "href =" within the opening anchor tag. However, now the name for the section should be preceeded by a "#" within its quotation marks. <br/><br>
