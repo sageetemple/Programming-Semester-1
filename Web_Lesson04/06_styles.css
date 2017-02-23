@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+h1{color: #12A494;
+	font-weight: bold;
+	font-size: 36px;}
+h3{color: #6A12A4;
+	font-size: 26px;}
+p{color: #15BF9B;
+  font-style:italic;
+  font-family: 'Sansita', sans-serif;}
+a{color: #E388D7;}
+	
