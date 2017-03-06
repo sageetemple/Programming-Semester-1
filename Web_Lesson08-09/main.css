@@ -1,0 +1,20 @@
+* {
+	color: yellow;
+}
+p:not(.cool) {
+	color: orange;
+}
+tr:nth-child(odd)>td:nth-child(odd) {
+	background-color:blue;
+
+}
+tr:nth-child(odd) > td:nth-child(even) {
+	background-color:purple;
+}
+tr:nth-child(even)>td:nth-child(even) {
+	background-color:blue;
+
+}
+tr:nth-child(even) > td:nth-child(odd) {
+	background-color:purple;
+}

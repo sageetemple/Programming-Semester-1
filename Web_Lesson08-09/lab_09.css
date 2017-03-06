@@ -1,0 +1,83 @@
+		@import url('https://fonts.googleapis.com/css?family=Oswald');
+		h1{
+			border: 70px solid #1596BF;
+			position:relative;
+			background-color: #EED7ED;
+			}
+		img{
+			max-height: 200px;
+			max-width:200px;
+			position:relative;
+			left:20%;
+			}
+		p {
+			font-size: 20px;
+			color: #25C7E0;
+			font-family: 'Oswald', sans-serif;
+			position: relative;
+			left: 35%;
+			}
+		p:not(.hello) {color: #B225F4;
+			font-style: italic;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Alegreya');
+		aside>p {
+			font-size: 20px;
+			color: #C482C2;
+			font-family:'Alegreya', serif; 
+			position:relative;
+			left:70%;
+		}
+		article>p{
+			color: #574BB0;
+			position:relative;
+			left:0%;
+		}
+		footer>p{
+			font-size: 10px;
+			position:relative;
+			left: 0%;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Supermercado+One');
+		a {
+			font-family: 'Supermercado One', cursive;
+			color: #82C4C4;
+		}
+		ul{
+			background-color: #B04BA5;
+		}
+		a:hover {
+			color: #EC4646;
+			text-decoration: none;
+		}
+		a:visited {
+			font-weight: bold;
+			font-style: italic;
+		}
+		a:active {
+			background-color: #4BB07B;
+		}
+		tr:nth-child(odd)>td:nth-child(odd) {
+			color: #BC0780;
+		}
+		tr:nth-child(odd)>td:nth-child(even) {
+			color: #0788BC;
+		}
+		tr:nth-child(even)>td:nth-child(2) {
+			color: #E62F1C;
+		}
+		tr:nth-child(even)>td:nth-child(3) {
+			color: #E62F1C;
+		}
+		tr:nth-child(even)>td {
+			color: #50AF0A;
+		}
+		table {border: 5px solid #20A0AD;
+			position: relative;
+			left: 25%;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Gidugu');
+		td {border: 2px solid #20A0AD;
+			font-family: 'Gidugu', sans-serif;
+			font-weight: bold;
+		}
