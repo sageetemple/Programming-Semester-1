@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        H: <input type="text" size = "30" maxLength = "10" id="height" value="Please enter your height in meters"/>
+        <br/>
+        <br/>
+        W: <input type="text" size="30" maxLength="10" id="weight" value="Please enter your weight in kilograms"/>
+        <br/>
+        <br/>
+        <input type="button" value="Calculate" onclick="bmi()"/>
+    </form>
+
+    <script>
+        function bmi() {
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("weight").value;
+            document.write("Your BMI is " + (w/(h*h)));
+        }
+    </script>
+</body>
+</html>

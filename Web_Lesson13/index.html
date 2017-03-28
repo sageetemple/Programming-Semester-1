@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //here is a line comment just for this line
+        /* everything hereafter
+        is commented until closed */
+        document.write("Hello World! <br/>");
+        document.write("Hello World <br/>");
+        document.write("Hello World <br/>");
+        var poo = 23;
+        document.write(poo, "<br/>");
+        var one = 2.34;
+        document.write(one + "&nbsp" + poo + " are two numbers <br/>");
+        document.write(one + ":&emsp;" + poo);
+
+        function morris() {
+            alert("What the heck is this!!?");
+        }
+        function bear() {
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+            document.write("Your perimenter is..." + (2*h+2*w));
+
+        }
+    </script>
+
+    <form>
+        <input type = "button" value = "Hello" onclick = "morris()">
+        <br/>
+        H: <input type = "text" size = 15 maxLength = 10 id = "height" value = "Enter height"/>
+        <br/>
+        <br/>
+        <br/>
+        W: <input type = "text" size = 15 maxLength = 10 id = "width" value = "Enter width"/>
+        <br/>
+        <input type = "button" value = "Calculate" onclick = "bear()"/>
+    </form>
+</body>
+</html>
