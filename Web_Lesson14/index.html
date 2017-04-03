@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meh</title>
+    <script src="vf.js"></script>
+
+</head>
+<body>
+    <script>
+        function addNumbers() {
+            var c = 3;
+            var d = 2;
+            return c + d;
+        }
+        document.write(addNumbers() + addNumbers());
+        function printOut() {
+            return "Time to Code!";
+        }
+        document.write(printOut());
+        function doFirst() {
+            document.write("first<br/>");
+            doSecond();
+        }
+        function doSecond() {
+            document.write("second");
+        }
+        function start() {
+            doFirst();
+            doSecond();
+        }
+        start();
+
+        var name="Nancy";
+        function getName() {
+            document.write(name + "<br/>");
+        }
+        getName();
+        document.write(name+"<br/>");
+    </script>
+    <form name="input">
+    User Name: <input type = "text" name="username"/><br/><br/>
+    Password: <input type = "password" name="password"/><br/><br/>
+    <input type="submit" value = "Submit" onClick="validate()"/>
+    </form>
+
+</body>
+</html>
