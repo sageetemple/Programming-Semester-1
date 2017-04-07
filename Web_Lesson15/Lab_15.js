@@ -1,16 +1,18 @@
 /**
  * Created by templetons0379 on 4/5/2017.
  */
-function custom() {
+function custom()
+{
     var x = document.getElementById("canvas");
-    var g = canvas.createLinearGradient(150, 150, 600, 560);
-    g.addColorStop(0, "purple");
-    g.addColorStop(.3, "blue");
-    g.addColorStop(1, "yellow");
-
     canvas = x.getContext("2d");
-    canvas.strokeStyle="red";
-    canvas.fillStyle=g;
+    var g = canvas.createLinearGradient(150, 150, 600, 560);
+    g.addColorStop(.2, "purple");
+    g.addColorStop(0.45, "blue");
+    g.addColorStop(.8, "yellow");
+
+
+    canvas.strokeStyle = "red";
+    canvas.fillStyle = g;
     canvas.beginPath();
     canvas.moveTo(150, 150);
     canvas.lineTo(300, 200);
